@@ -1,0 +1,296 @@
+.limber-tabs {
+	display: block;
+	max-width: 100%;
+	position: relative;
+}
+.limber-tabs * {
+	max-width: 100% !important;
+}
+.limber-nav, .limber-title {
+	overflow: visible;
+	display: none;
+}
+.limber-tabs hr {
+	position: absolute;
+	margin: 0;
+	transition: all .25s 0s;
+	-o-transition: all .25s 0s;
+	-ms-transition: all .25s 0s;
+	-moz-transition: all .25s 0s;
+	-webkit-transition: all .25s 0s;
+	z-index: 5;
+}
+.limber-tab {
+	display: block;
+	padding: 0;
+	overflow: hidden;
+	position: relative;
+}
+.limber-tab .limber-content {
+	height: 0;
+	overflow: hidden;
+	padding: 0 .5em;
+}
+.limber-tab.open .limber-content {
+	height: auto;
+	padding: 1em .5em;
+}
+/* mini [mobile] */
+.limber-tabs.mini {
+	margin-left: .5em;
+}
+.limber-tabs.mini hr {
+	border-left: .25em solid;
+	border-right: .15em solid;
+	border-top: 0;
+	border-bottom: 0;
+	margin-left: -.5em;
+	width: 0 !important;
+}
+.limber-tabs.mini .limber-tab {
+	border-right: .09em solid;
+}
+.limber-tabs.mini .limber-title {
+	position: relative;
+	display: block;
+	padding: .5em;
+	padding-right: 1.5em;
+	border-top: .09em solid;
+	font-size: 1.25em;
+}
+.limber-tabs.mini {
+	border-bottom: .09em solid;
+}
+.limber-tabs.mini .limber-tab.open .limber-title {
+	font-weight: 700;
+}
+.limber-tabs.mini .limber-title:before, .limber-tabs.mini .limber-title:after {
+	position: absolute;
+	display: block;
+	content: ' ';
+	width: .1em;
+	height: .75em;
+}
+.limber-tabs.mini .limber-title:before {
+	right: 1em;
+	top: .75em;
+	-ms-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.limber-tabs.mini .limber-title:after {
+	top: .75em;
+	right: 1.5em;
+	-ms-transform: rotate(135deg);
+	-moz-transform: rotate(135deg);
+	-webkit-transform: rotate(135deg);
+	transform: rotate(135deg);
+}
+.limber-tabs.mini .limber-tab.open .limber-title:before {
+	right: 1.5em;
+}
+.limber-tabs.mini .limber-tab.open .limber-title:after {
+	right: 1em;
+}
+/* max [desktop] */
+.limber-tabs.max {
+	border-radius: 4px;
+	border: .1em solid;
+}
+.limber-tabs.max .limber-nav {
+	display: block;
+	position: relative;
+}
+.limber-tabs.max .limber-nav a {
+	display: inline-block;
+	padding: .5em 1em;
+}
+.limber-tabs.max .limber-nav a:first-of-type {
+	padding-left: .5em;
+}
+.limber-tabs.max .limber-nav a.open {
+	font-weight: 700;
+}
+.limber-tabs.max hr {
+	border-top: .25em solid;
+	border-bottom: .25em solid;
+	border-left: 0;
+	border-right: 0;
+	height: auto !important;
+	top: auto !important;
+}
+
+
+/* color preferences */
+
+/* DEFAULT */
+.limber-tabs.mini .limber-tab:nth-of-type(odd) .limber-title, 
+.limber-tabs.max .limber-nav {
+	background-color: rgb(205,205,205);
+}
+.limber-tabs.mini .limber-tab:nth-of-type(even) .limber-title {
+	background-color: rgb(245,245,245);
+}
+.limber-tabs,
+.limber-tabs.mini .limber-tab, 
+.limber-tabs.mini .limber-title {
+	border-color: rgba(0,0,0,.2) !important;
+}
+.limber-tab.open .limber-content {
+	background-color: rgb(255,255,255);
+}
+.limber-tabs.mini .limber-title:before, .limber-tabs.mini .limber-title:after {
+	background-color: rgb(100,100,100) !important;
+}
+.limber-tabs.mini .limber-title:after {
+	color: rgb(100,100,100) !important;
+}
+.limber-tabs.mini .limber-title, .limber-tabs.max .limber-nav a {
+	color: rgb(0,0,0);
+	text-decoration: none;
+}
+.limber-tabs hr {
+	border-color: rgb(79,38,131) !important;
+}
+
+/* JETBLACK */
+.limber-tabs.jetblack.mini .limber-tab:nth-of-type(odd) .limber-title, 
+.limber-tabs.jetblack.max .limber-nav {
+	background-color: rgb(5,5,5);
+}
+.limber-tabs.jetblack.mini .limber-tab:nth-of-type(even) .limber-title {
+	background-color: rgb(50,50,50);
+}
+.limber-tabs.jetblack,
+.limber-tabs.jetblack.mini .limber-tab, 
+.limber-tabs.jetblack.mini .limber-title {
+	border-color: rgba(0,0,0,.5) !important;
+}
+.limber-tab.open .limber-content {
+	background-color: rgb(255,255,255);
+}
+.limber-tabs.jetblack.mini .limber-title:before, .limber-tabs.jetblack.mini .limber-title:after {
+	background-color: rgb(100,100,100) !important;
+}
+.limber-tabs.jetblack.mini .limber-title:after {
+	color: rgb(100,100,100) !important;
+}
+.limber-tabs.jetblack.mini .limber-title, .limber-tabs.jetblack.max .limber-nav a {
+	color: rgb(205,205,205);
+	text-decoration: none;
+}
+.limber-tabs.jetblack.mini .limber-tab.open .limber-title, .limber-tabs.jetblack.max .limber-nav a.open {
+	color: rgb(255,255,255);
+}
+.limber-tabs.jetblack hr {
+	border-color: rgb(55,55,55) !important;
+}
+
+/* MOCHA */
+.limber-tabs.mocha.mini .limber-tab:nth-of-type(odd) .limber-title, 
+.limber-tabs.mocha.max .limber-nav {
+	background-color: rgb(76,51,26);
+}
+.limber-tabs.mocha.mini .limber-tab:nth-of-type(even) .limber-title {
+	background-color: rgb(94,71,49);
+}
+.limber-tabs.mocha,
+.limber-tabs.mocha.mini .limber-tab, 
+.limber-tabs.mocha.mini .limber-title {
+	border-color: rgba(76,51,26,.5) !important;
+}
+.limber-tab.open .limber-content {
+	background-color: rgb(255,255,255);
+}
+.limber-tabs.mocha.mini .limber-title:before, .limber-tabs.mocha.mini .limber-title:after {
+	background-color: rgb(193,163,133) !important;
+}
+.limber-tabs.mocha.mini .limber-tab.open .limber-title:before, .limber-tabs.mocha.mini .limber-tab.open .limber-title:after {
+	background-color: rgb(255,255,255) !important;
+}
+.limber-tabs.mocha.mini .limber-title:after {
+	color: rgb(100,100,100) !important;
+}
+.limber-tabs.mocha.mini .limber-title, .limber-tabs.mocha.max .limber-nav a {
+	color: rgb(193,163,133);
+	text-decoration: none;
+}
+.limber-tabs.mocha.mini .limber-tab.open .limber-title, .limber-tabs.mocha.max .limber-nav a.open {
+	color: rgb(255,255,255);
+}
+.limber-tabs.mocha hr {
+	border-color: rgb(204,51,153) !important;
+}
+
+/* LIME */
+.limber-tabs.lime.mini .limber-tab:nth-of-type(odd) .limber-title, 
+.limber-tabs.lime.max .limber-nav {
+	background-color: rgb(230,230,230);
+}
+.limber-tabs.lime.mini .limber-tab:nth-of-type(even) .limber-title {
+	background-color: rgb(245,245,245);
+}
+.limber-tabs.lime,
+.limber-tabs.lime.mini .limber-tab, 
+.limber-tabs.lime.mini .limber-title {
+	border-color: rgba(0,0,0,.5) !important;
+}
+.limber-tab.open .limber-content {
+	background-color: rgb(255,255,255);
+}
+.limber-tabs.lime.mini .limber-title:before, .limber-tabs.lime.mini .limber-title:after {
+	background-color: rgb(100,100,100) !important;
+}
+.limber-tabs.lime.mini .limber-tab.open .limber-title:before, .limber-tabs.lime.mini .limber-tab.open .limber-title:after {
+	background-color: rgb(138,184,0) !important;
+}
+.limber-tabs.lime.mini .limber-title:after {
+	color: rgb(100,100,100) !important;
+}
+.limber-tabs.lime.mini .limber-title, .limber-tabs.lime.max .limber-nav a {
+	color: rgb(0,0,0);
+	text-decoration: none;
+}
+.limber-tabs.lime.mini .limber-tab.open .limber-title, .limber-tabs.lime.max .limber-nav a.open {
+	color: rgb(138,184,0);
+}
+.limber-tabs.lime hr {
+	border-color: rgb(153,204,0) !important;
+}
+
+/* CLOUDYSKY */
+.limber-tabs.cloudysky.mini .limber-tab:nth-of-type(odd) .limber-title, 
+.limber-tabs.cloudysky.max .limber-nav {
+	background-color: rgb(230,230,230);
+}
+.limber-tabs.cloudysky.mini .limber-tab:nth-of-type(even) .limber-title {
+	background-color: rgb(245,245,245);
+}
+.limber-tabs.cloudysky,
+.limber-tabs.cloudysky.mini .limber-tab, 
+.limber-tabs.cloudysky.mini .limber-title {
+	border-color: rgba(0,0,0,.3) !important;
+}
+.limber-tab.open .limber-content {
+	background-color: rgb(255,255,255);
+}
+.limber-tabs.cloudysky.mini .limber-title:before, .limber-tabs.cloudysky.mini .limber-title:after {
+	background-color: rgb(100,100,100) !important;
+}
+.limber-tabs.cloudysky.mini .limber-tab.open .limber-title:before, .limber-tabs.cloudysky.mini .limber-tab.open .limber-title:after {
+	background-color: rgb(26,76,128) !important;
+}
+.limber-tabs.cloudysky.mini .limber-title:after {
+	color: rgb(100,100,100) !important;
+}
+.limber-tabs.cloudysky.mini .limber-title, .limber-tabs.cloudysky.max .limber-nav a {
+	color: rgb(100,100,100);
+	text-decoration: none;
+}
+.limber-tabs.cloudysky.mini .limber-tab.open .limber-title, .limber-tabs.cloudysky.max .limber-nav a.open {
+	color: rgb(26,76,128);
+}
+.limber-tabs.cloudysky hr {
+	border-color: rgb(102,204,255) !important;
+}
