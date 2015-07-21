@@ -1,6 +1,7 @@
 # limber-responsive-tabs
 <p><strong>Limber creates dynamic and intuitive tabs from existing HTML markup that will work on all display sizes. Very simple HTML markup, and multiple color schemes.</strong></p>
-<p><a href="http://www.concordia.edu/tabs" target="_blank">See these tabs in action!</a></p>
+<p><a href="http://www.concordia.edu/tabs" target="_blank">See these tabs on concordia.edu!</a></p>
+<p><a href="http://caitlinmarkert.com/projects/limber-responsive-tabs/examples.html" target="_blank">See more examples.</a></p>
 ## what makes it awesome?
 ### it has two modes
 <p>These tabs are responsive. Once the list of tab titles is so long that it overflows to another line, the tabs will transform into an accordion-style layout.</p>
